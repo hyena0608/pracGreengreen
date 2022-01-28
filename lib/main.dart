@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:greengreen_test/screen/result_screen.dart';
+import 'package:greengreen_test/widget/map_test.dart';
 
 void main() => runApp(MyApp());
 
@@ -20,11 +21,7 @@ class _MyAppState extends State<MyApp> {
         child: Scaffold(
           body: TabBarView(children: [
             ResultScreen(),
-            Container(
-              child: Center(
-                child: Text('2 페이지'),
-              ),
-            ),
+            MapTest(),
             Container(
               child: Center(
                 child: Text('3 페이지'),
