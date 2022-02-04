@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:greengreen_test/widget/map_sample.dart';
 
@@ -14,7 +15,7 @@ class _ResultScreenState extends State<ResultScreen> {
           children: [
             /** map_sample Widget */
             Container(
-              // child: MapSample(),
+              child: MapSample(),
               width: 390,
               height: 500,
             ),
@@ -74,7 +75,7 @@ class _ResultScreenState extends State<ResultScreen> {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () => setState(() {}),
-          child: const Icon(Icons.add),)
+          child: const Icon(CupertinoIcons.share),)
     );
   }
 }

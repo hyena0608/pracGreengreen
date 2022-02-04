@@ -61,7 +61,7 @@ Set<Marker> getMarkers(List<Position> positions) {
 
 /** 마커 사이 경로선 가져오기 메서드 */
 Set<Polyline> getPolylines(List<Position> positions) {
-  final Set<Polyline> results = {};
+  final Set<Polyline> results = new Set<Polyline>();
   List<LatLng> latlngs = [];
 
   for (var i = 0; i < positions.length; i++) {
